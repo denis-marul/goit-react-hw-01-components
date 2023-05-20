@@ -1,0 +1,53 @@
+.statistics{
+    font-weight: 500;
+        font-size: 17px;
+        line-height: 1.18;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        width: 600px;
+        padding-top: 5px;
+        margin: auto;
+        border: 2px solid rgb(165, 165, 165);
+        border-top: 0;
+}
+.title{
+    text-transform: uppercase;
+}
+.statList{
+    border-top: 2px solid rgb(165, 165, 165);
+        text-align: center;
+        justify-content: space-evenly;
+        display: flex;
+        height: 100px;
+        color: white;
+    
+}
+
+.item{
+    font-weight: 500;
+        font-size: 17px;
+        line-height: 1.18;
+        padding-top: 20px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        &:not(:last-child) {
+            border-right: 2px solid rgb(165, 165, 165);
+        }
+}
+
+
+
+
+.label{
+    padding-bottom: 10px;
+}
+
+.percentage{
+    font-weight: 300;
+        font-size: 30px;
+        line-height: 1.18;
+}
