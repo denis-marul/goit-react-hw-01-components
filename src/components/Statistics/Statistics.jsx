@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Stat } from './Stat';
 
 export const Statistics = ({ title, stats }) => {
-    return <section className={css.statistics}>
-        <h2 className={css.title}>{title}</h2>
+  return <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
+        
 
       <ul className={css.statList}>
         {stats.map(stat => (
@@ -23,7 +24,7 @@ export const Statistics = ({ title, stats }) => {
 }
 
 Statistics.protoTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     })),    
